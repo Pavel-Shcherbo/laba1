@@ -76,6 +76,13 @@ public class Complex {
         im -= b.im;
         return this;
     }
+    public double getReal() {
+        return re;
+    }
+
+    public double getImaginary() {
+        return im;
+    }
     public Complex times(Complex b) {
         Complex a = this;
         double real = a.re * b.re - a.im * b.im;
